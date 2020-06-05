@@ -39,16 +39,12 @@ let store = createStore(groceryApp, {
   groceryList: groceryItemsFromServer
 });
 
-store.subscribe(() => {
-  console.log(store.getState());
-});
-
 ReactDOM.render(
-  // <React.StrictMode>
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
