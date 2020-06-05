@@ -5,7 +5,7 @@ export const SET_CATEGORY_FILTER = "SET_CATEGORY_FILTER";
 export const SORT_BY_NAME = "SORT_BY_NAME";
 export const SORT_BY_DESCRIPTION = "SORT_BY_DESCRIPTION";
 
-let itemId = 1;
+let itemId = 4;
 
 export const addItem = payload => {
   return {
